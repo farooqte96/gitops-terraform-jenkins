@@ -12,6 +12,7 @@ provider "aws" {
   region = "us-east-1"
 }
 
+/*
 # Create EC2 instance
 resource "aws_instance" "default" {
   ami                    = var.ami
@@ -25,6 +26,8 @@ resource "aws_instance" "default" {
     Name = "terraform-default"
   }
 }
+
+*/
 
 # Create Security Group for EC2
 resource "aws_security_group" "default" {
