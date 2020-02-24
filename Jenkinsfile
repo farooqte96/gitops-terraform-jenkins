@@ -36,7 +36,7 @@ try {
       //booleanParam(name: 'UPDATE', defaultValue: false, description: 'Updating the containers and/or configs.')
       //booleanParam(name: 'WEBUI', defaultValue: false, description: 'Updating WEB UI Containers')
   }
-  
+
   // Run terraform init
   stage('init') {
     node {
@@ -47,7 +47,7 @@ try {
         secretKeyVariable: 'AWS_SECRET_ACCESS_KEY'
       ]]) {
         ansiColor('xterm') {
-          sh 'terraform init -backend=true -input=false -backend-config="key=${params.AWS_REGION}/${params.SE_PROJECT_TAG}/${params.ENVIRONMENT}/terraform.tfstate"'
+          sh 'terraform init -backend=true -input=false -backend-config="key=us-east-1/nirone/develop/terraform.tfstate"'
         }
       }
     }
