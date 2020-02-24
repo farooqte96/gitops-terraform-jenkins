@@ -2,7 +2,7 @@
 terraform {
   backend "s3" {
     bucket = "spectralengines-k8-storage"
-    key    = "terraform.tfstate"
+    key    = "alpha/terraform.tfstate"
     region = "us-east-1"
   }
 }
