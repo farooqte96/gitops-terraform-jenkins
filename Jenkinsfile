@@ -20,7 +20,7 @@ try {
       ]]) {
         ansiColor('xterm') {
           //sh 'terraform init'
-          sh 'terraform  init -backend=true -input=false'
+          sh 'terraform  init'
         }
       }
     }
