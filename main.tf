@@ -14,7 +14,7 @@ provider "aws" {
 
 /*
 # Create EC2 instance
-resource "aws_instance" "default" {
+resource "aws_instance" "default-1" {
   ami                    = var.ami
   count                  = var.instance_count
   key_name               = var.key_name
