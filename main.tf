@@ -2,7 +2,7 @@
 terraform {
   backend "s3" {
     bucket = "spectralengines-k8-storage"
-    key    = "eks/test/terraform.tfstate"
+    key    = "eks"
     region = "us-east-1"
   }
 }
@@ -14,7 +14,7 @@ provider "aws" {
 
 /*
 # Create EC2 instance
-resource "aws_instance" "default" {
+resource "aws_instance" "default-1" {
   ami                    = var.ami
   count                  = var.instance_count
   key_name               = var.key_name
