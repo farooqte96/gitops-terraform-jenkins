@@ -20,7 +20,7 @@ try {
       ]]) {
         ansiColor('xterm') {
           //sh 'terraform init'
-          sh 'terraform  init -backend=true -input=false --backend-config="key="alpha/terraform.tfstate"'
+          sh 'terraform  init -backend=true -input=false --backend-config="key=alpha/terraform.tfstate"'
         }
       }
     }
