@@ -1,7 +1,7 @@
 # Terraform state will be stored in S3
 terraform {
   backend "s3" {
-    bucket = "new-spectralengines-k8-storage"
+    bucket = "spectralengines-k8-storage"
     key    = "alpha/eks.tfstate"
     region = "us-east-1"
   }
